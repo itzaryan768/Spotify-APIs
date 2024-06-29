@@ -3,7 +3,7 @@ const { logData } = require('../utils/logs');
 const BASE_URL = 'https://spotify-reset-api.onrender.com';
 
 const searchSongs = async (req, res) => {
-  const query = req.query;
+  const query = req.query.q;
   try {
     const response = await axios.get(`${BASE_URL}/search`, { params: { q: query } });
     logData(`Search query: ${query}`);
@@ -15,7 +15,7 @@ const searchSongs = async (req, res) => {
 };
 
 const downloadSong = async (req, res) => {
-  const query = req.query.url;
+  const query = req.query.q;
   try {
     const response = await axios.get(`${BASE_URL}/download`, { params: { q: query } });
     logData(`Download query: ${query}`);
