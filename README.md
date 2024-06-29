@@ -19,7 +19,7 @@ This project is a Node.js Express server that acts as a proxy for the Spotify AP
 1. Clone the repository:
    ```bash
    git clone https://github.com/itzaryan768/Spotify-APIs.git
-   cd spotify-api-proxy
+   cd Spotify-APIs
    ```
 
 2. Install dependencies:
