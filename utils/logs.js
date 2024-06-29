@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+// Adjust the path if you want the log file in a different directory
 const logFilePath = path.join(__dirname, 'logs.txt');
 
 const logData = (message) => {
